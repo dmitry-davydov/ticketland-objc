@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A31289726618101003AC216 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31289626618101003AC216 /* MapViewController.m */; };
+		0A31289A26618136003AC216 /* GeoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31289926618136003AC216 /* GeoService.m */; };
 		0A687D1E26541CBA00A1140A /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A687D1B26541CBA00A1140A /* countries.json */; };
 		0A687D1F26541CBA00A1140A /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A687D1C26541CBA00A1140A /* cities.json */; };
 		0A687D2026541CBA00A1140A /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A687D1D26541CBA00A1140A /* airports.json */; };
@@ -24,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A31289526618101003AC216 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		0A31289626618101003AC216 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		0A31289826618136003AC216 /* GeoService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeoService.h; sourceTree = "<group>"; };
+		0A31289926618136003AC216 /* GeoService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoService.m; sourceTree = "<group>"; };
 		0A687D1B26541CBA00A1140A /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		0A687D1C26541CBA00A1140A /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
 		0A687D1D26541CBA00A1140A /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
@@ -89,6 +95,8 @@
 			children = (
 				0A687D2C2654276100A1140A /* DataManager.h */,
 				0A687D2D2654276100A1140A /* DataManager.m */,
+				0A31289826618136003AC216 /* GeoService.h */,
+				0A31289926618136003AC216 /* GeoService.m */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -135,6 +143,8 @@
 				0A8ED919264FCF2C00F7B28C /* LaunchScreen.storyboard */,
 				0A8ED91C264FCF2C00F7B28C /* Info.plist */,
 				0A8ED91D264FCF2C00F7B28C /* main.m */,
+				0A31289526618101003AC216 /* MapViewController.h */,
+				0A31289626618101003AC216 /* MapViewController.m */,
 			);
 			path = TicketLand;
 			sourceTree = "<group>";
@@ -215,8 +225,10 @@
 				0A8ED90D264FCF2B00F7B28C /* AppDelegate.m in Sources */,
 				0A8ED91E264FCF2C00F7B28C /* main.m in Sources */,
 				0A687D2426541E3300A1140A /* Country.m in Sources */,
+				0A31289A26618136003AC216 /* GeoService.m in Sources */,
 				0A687D2A2654258A00A1140A /* Airport.m in Sources */,
 				0A687D27265420E000A1140A /* City.m in Sources */,
+				0A31289726618101003AC216 /* MapViewController.m in Sources */,
 				0A687D2E2654276100A1140A /* DataManager.m in Sources */,
 				0A8ED910264FCF2B00F7B28C /* SceneDelegate.m in Sources */,
 			);
