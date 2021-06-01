@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2636D92666D0F900FAA71D /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2636D82666D0F900FAA71D /* TabBarController.m */; };
 		0A31289726618101003AC216 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31289626618101003AC216 /* MapViewController.m */; };
 		0A31289A26618136003AC216 /* GeoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31289926618136003AC216 /* GeoService.m */; };
 		0A687D1E26541CBA00A1140A /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A687D1B26541CBA00A1140A /* countries.json */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A2636D72666D0F900FAA71D /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		0A2636D82666D0F900FAA71D /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		0A31289526618101003AC216 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		0A31289626618101003AC216 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		0A31289826618136003AC216 /* GeoService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeoService.h; sourceTree = "<group>"; };
@@ -104,8 +107,12 @@
 		0A687D2F2656606300A1140A /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				0A8ED911264FCF2B00F7B28C /* MainViewController.h */,
+				0A8ED912264FCF2B00F7B28C /* MainViewController.m */,
 				0A687D302656608600A1140A /* PlaceViewController.h */,
 				0A687D312656608600A1140A /* PlaceViewController.m */,
+				0A2636D72666D0F900FAA71D /* TabBarController.h */,
+				0A2636D82666D0F900FAA71D /* TabBarController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -137,8 +144,6 @@
 				0A8ED90C264FCF2B00F7B28C /* AppDelegate.m */,
 				0A8ED90E264FCF2B00F7B28C /* SceneDelegate.h */,
 				0A8ED90F264FCF2B00F7B28C /* SceneDelegate.m */,
-				0A8ED911264FCF2B00F7B28C /* MainViewController.h */,
-				0A8ED912264FCF2B00F7B28C /* MainViewController.m */,
 				0A8ED917264FCF2C00F7B28C /* Assets.xcassets */,
 				0A8ED919264FCF2C00F7B28C /* LaunchScreen.storyboard */,
 				0A8ED91C264FCF2C00F7B28C /* Info.plist */,
@@ -229,6 +234,7 @@
 				0A687D2A2654258A00A1140A /* Airport.m in Sources */,
 				0A687D27265420E000A1140A /* City.m in Sources */,
 				0A31289726618101003AC216 /* MapViewController.m in Sources */,
+				0A2636D92666D0F900FAA71D /* TabBarController.m in Sources */,
 				0A687D2E2654276100A1140A /* DataManager.m in Sources */,
 				0A8ED910264FCF2B00F7B28C /* SceneDelegate.m in Sources */,
 			);
