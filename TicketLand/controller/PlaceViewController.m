@@ -8,6 +8,7 @@
 #define ReuseIdentifier @"PlaceCellIdentifier"
 
 #import "PlaceViewController.h"
+#import "DataManager.h"
 
 @interface PlaceViewController () <UISearchResultsUpdating>
 @property (nonatomic) PlaceType placeType;
