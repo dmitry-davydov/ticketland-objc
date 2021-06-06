@@ -36,6 +36,7 @@
 		0AA2A31C266BB78B00110584 /* MapPrice+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2A31B266BB78B00110584 /* MapPrice+CoreDataProperties.swift */; };
 		0AA2A333266C186A00110584 /* FavoriteCity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2A331266C186A00110584 /* FavoriteCity+CoreDataClass.swift */; };
 		0AA2A334266C186A00110584 /* FavoriteCity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2A332266C186A00110584 /* FavoriteCity+CoreDataProperties.swift */; };
+		0AA2A337266C1A0A00110584 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2A335266C1A0A00110584 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		0AA2A31B266BB78B00110584 /* MapPrice+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapPrice+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0AA2A331266C186A00110584 /* FavoriteCity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteCity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0AA2A332266C186A00110584 /* FavoriteCity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteCity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0AA2A336266C1A0A00110584 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 		0A8ED90A264FCF2B00F7B28C /* TicketLand */ = {
 			isa = PBXGroup;
 			children = (
+				0AA2A335266C1A0A00110584 /* Model.xcdatamodeld */,
 				0A687D2F2656606300A1140A /* controller */,
 				0A687D2B2654275200A1140A /* services */,
 				0A687D2126541CC000A1140A /* dto */,
@@ -298,6 +301,7 @@
 				0A2636D92666D0F900FAA71D /* TabBarController.m in Sources */,
 				0A680F41266B7F2F00C15CFB /* TicketsViewController.m in Sources */,
 				0A095F14266AD5BE00C5633F /* PointAnnotation.m in Sources */,
+				0AA2A337266C1A0A00110584 /* Model.xcdatamodeld in Sources */,
 				0A687D2E2654276100A1140A /* DataManager.m in Sources */,
 				0A8ED910264FCF2B00F7B28C /* SceneDelegate.m in Sources */,
 			);
@@ -494,6 +498,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0AA2A335266C1A0A00110584 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0AA2A336266C1A0A00110584 /* Model.xcdatamodel */,
+			);
+			currentVersion = 0AA2A336266C1A0A00110584 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0A8ED900264FCF2B00F7B28C /* Project object */;
 }

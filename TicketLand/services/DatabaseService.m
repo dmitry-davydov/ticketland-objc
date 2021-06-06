@@ -136,7 +136,7 @@
 }
 
 - (NSArray *)favoritesCities {
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"FavoriteCities"];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"FavoriteCity"];
     return [_managedObjectContext executeFetchRequest:request error:nil];
 }
 

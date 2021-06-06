@@ -6,12 +6,16 @@
 //
 
 #import "TicketsViewController.h"
+#import "MapViewController.h"
 
 #define TicketCellReuseIdentifier @"TicketCellIdentifier"
 
 @interface TicketsViewController ()
 @property (nonatomic, strong) NSArray *tickets;
 @property (nonatomic, strong) UISegmentedControl *segmentedControl;
+
+@property (nonatomic, strong) MapViewController *mapVC;
+
 @end
 
 @implementation TicketsViewController {
@@ -34,18 +38,16 @@
 }
 
 - (void) changeSource {
-    switch (_segmentedControl.selectedSegmentIndex) {
-        case 0:
-//            _currentArray = [[DataManager sharedInstance] cities];
-            break;
-        case 1:
-//            _currentArray = [[DataManager sharedInstance] airports];
-            break;
-        default:
-            break;
+    
+    if (_segmentedControl.selectedSegmentIndex == 1) {
+        [self addChildViewController:_mapVC];
+        [self didMoveToParentViewController:_mapVC];
+        [self.view addSubview:_mapVC.view];
     }
     
-//    [self.tableView reloadData];
+    if (_segmentedControl.selectedSegmentIndex == 0) {
+        [_mapVC.view removeFromSuperview];
+    }
 }
 
 - (instancetype)initWithTickets:(NSArray *)tickets {
@@ -68,6 +70,8 @@
         self.title = @"Favorites";
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [self.tableView registerClass:[TicketTableViewCell class] forCellReuseIdentifier:TicketCellReuseIdentifier];
+        
+        self.mapVC = [[MapViewController alloc]initWithFavorites];
     }
     return self;
 }
@@ -126,7 +130,6 @@
             [[DatabaseService sharedInstance] addToFavorite:[self->_tickets objectAtIndex:indexPath.row]];
         }];
     }
-    
     
     [alertController addAction:favoriteAction];
     [alertController addAction:cancelAction];
