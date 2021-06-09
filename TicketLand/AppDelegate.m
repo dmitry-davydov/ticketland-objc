@@ -8,7 +8,8 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 
-@interface AppDelegate ()
+
+@interface AppDelegate () 
 
 @end
 
@@ -21,6 +22,7 @@
     
     return YES;
 }
+
 
 
 #pragma mark - UISceneSession lifecycle
