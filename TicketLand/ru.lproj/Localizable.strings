@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  TicketLand
+
+  Created by Дима Давыдов on 09.06.2021.
+  
+*/
+
+"rub" = "руб";
+
+// TabBarController
+"Search" = "Поиск";
+"Map" = "Карта";
+"Favorites" = "Избранные";
+
+// MainViewController
+"mainViewController.title" = "Поиск";
+"mainViewController.departure.button" = "Отправление";
+"mainViewController.arrival.button" = "Прибытие";
+"mainViewController.search.button" = "Искать";
+"mainViewController.search.not_found.title" = "Ой!";
+"mainViewController.search.not_found.message" = "Мы не нашли ни один билет";
+
+// PlaceViewController
+"placeViewController.title.departure" = "Отправление";
+"placeViewController.title.arrival" = "Прибытие";
+"placeViewController.segment.cities" = "Города";
+"placeViewController.segment.airports" = "Аэропорты";
+
+// TicketsViewController
+"ticketsViewController.segment.tickets" = "Билеты";
+"ticketsViewController.segment.map" = "Карта";
+"ticketsViewController.title.tickets" = "Билеты";
+"ticketsViewController.title.favorites" = "Избранные";
+"ticketsViewController.alert.title" = "Действия с билетов";
+"ticketsViewController.alert.message" = "Что вы хотите сделать?";
+
+"ticketsViewController.actions.notification.title" = "Напоминание";
+"ticketsViewController.actions.notification.close" = "Закрыть";
+"ticketsViewController.actions.notification.removeFromFavorites" = "Удалить из избранных";
+"ticketsViewController.actions.notification.addToFavorites" = "Добавить в избранные";
+
+"ticketsViewController.notification.alert.title" = "Напоминание о билете";
+"ticketsViewController.notification.alert.success" = "Успех";
+"ticketsViewController.notification.alert.message" = "Уведомление будет отправлено";
