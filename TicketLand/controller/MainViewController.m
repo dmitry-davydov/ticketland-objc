@@ -26,7 +26,7 @@
     [[DataManager sharedInstance] loadData];
 
     self.navigationController.navigationBar.prefersLargeTitles = YES;
-    self.title = @"Search";
+    self.title = NSLocalizedString(@"mainViewController.title", "");
     self.view.backgroundColor = [UIColor whiteColor];
 
     [self configurePlaceViewController];
@@ -48,7 +48,7 @@
 
 - (void) configureDepartureButton{
     _departureButton = [UIButton buttonWithType: UIButtonTypeSystem];
-    [_departureButton setTitle:@"Departure" forState:UIControlStateNormal];
+    [_departureButton setTitle:NSLocalizedString(@"mainViewController.departure.button", "") forState:UIControlStateNormal];
     _departureButton.tintColor = [UIColor blackColor];
     _departureButton.frame = CGRectMake(10.0, 20.0, _placeContainerView.frame.size.width - 20.0, 60.0);
     _departureButton.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.1];
@@ -59,7 +59,7 @@
 
 - (void) configureArrivalButton{
     _arrivalButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [_arrivalButton setTitle:@"Arrival" forState: UIControlStateNormal];
+    [_arrivalButton setTitle:NSLocalizedString(@"mainViewController.arrival.button", "") forState: UIControlStateNormal];
     _arrivalButton.tintColor = [UIColor blackColor];
     _arrivalButton.frame = CGRectMake(10.0, CGRectGetMaxY(_departureButton.frame) + 10.0, _placeContainerView.frame.size.width - 20.0, 60.0);
     _arrivalButton.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.3];
@@ -71,7 +71,7 @@
 
 - (void) configureSearchButton {
     _searchButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [_searchButton setTitle:@"Search" forState:UIControlStateNormal];
+    [_searchButton setTitle:NSLocalizedString(@"mainViewController.search.button", "") forState:UIControlStateNormal];
     _searchButton.tintColor = [UIColor whiteColor];
     _searchButton.frame = CGRectMake(30.0, CGRectGetMaxY(_placeContainerView.frame) + 30, [UIScreen mainScreen].bounds.size.width - 60.0, 60.0);
     _searchButton.backgroundColor = [UIColor blackColor];
@@ -87,7 +87,7 @@
             TicketsViewController *ticketsViewController = [[TicketsViewController alloc] initWithTickets:tickets];
             [self.navigationController showViewController:ticketsViewController sender:self];
         } else {
-            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Увы!" message:@"По данному направлению билетов не найдено" preferredStyle: UIAlertControllerStyleAlert];
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"mainViewController.search.not_found.title", "") message:NSLocalizedString(@"mainViewController.search.not_found.message", "") preferredStyle: UIAlertControllerStyleAlert];
             [alertController addAction:[UIAlertAction actionWithTitle:@"Закрыть" style:(UIAlertActionStyleDefault) handler:nil]];
             [self presentViewController:alertController animated:YES completion:nil];
         }
