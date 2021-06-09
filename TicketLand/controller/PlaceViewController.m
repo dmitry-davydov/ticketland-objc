@@ -52,9 +52,9 @@
 
 - (void)configureTitle{
     if (_placeType == PlaceDeparture) {
-        self.title = @"Departure";
+        self.title = NSLocalizedString(@"placeViewController.title.departure", "");
     } else {
-        self.title = @"Arrival";
+        self.title = NSLocalizedString(@"placeViewController.title.arrival", "");
     }
 }
 
@@ -66,7 +66,7 @@
 }
 
 - (void)configureSegmentedControl {
-    NSArray *segments = @[@"Cities", @"Airports"];
+    NSArray *segments = @[NSLocalizedString(@"placeViewController.segment.cities", ""), NSLocalizedString(@"placeViewController.segment.airports", "")];
     
     _segmentedControl = [[UISegmentedControl alloc] initWithItems: segments];
     _segmentedControl.selectedSegmentIndex = 0;

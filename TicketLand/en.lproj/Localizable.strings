@@ -1,0 +1,47 @@
+/* 
+  Localizable.strings
+  TicketLand
+
+  Created by Дима Давыдов on 09.06.2021.
+  
+*/
+
+"rub" = "rub";
+
+// TabBarController
+"Search" = "Search";
+"Map" = "Map";
+"Favorites" = "Favorites";
+
+// MainViewController
+"mainViewController.title" = "Search";
+"mainViewController.departure.button" = "Departure";
+"mainViewController.arrival.button" = "Arrival";
+"mainViewController.search.button" = "Search";
+"mainViewController.search.not_found.title" = "Ooops!";
+"mainViewController.search.not_found.message" = "We didn't find any tickets";
+
+// PlaceViewController
+"placeViewController.title.departure" = "Departure";
+"placeViewController.title.arrival" = "Arrival";
+"placeViewController.segment.cities" = "Cities";
+"placeViewController.segment.airports" = "Airports";
+
+// TicketsViewController
+"ticketsViewController.segment.tickets" = "Tickets";
+"ticketsViewController.segment.map" = "Map";
+"ticketsViewController.title.tickets" = "Tickets";
+"ticketsViewController.title.favorites" = "Favorites";
+"ticketsViewController.alert.title" = "Actions with ticket";
+"ticketsViewController.alert.message" = "What you should do with ticket?";
+
+"ticketsViewController.actions.notification.title" = "Notify";
+"ticketsViewController.actions.notification.close" = "Close";
+"ticketsViewController.actions.notification.removeFromFavorites" = "Remove from favorites";
+"ticketsViewController.actions.notification.addToFavorites" = "Add to favorites";
+
+"ticketsViewController.notification.alert.title" = "Ticket notification";
+"ticketsViewController.notification.alert.success" = "Success";
+"ticketsViewController.notification.alert.message" = "Notification will be sent";
+
+
