@@ -16,6 +16,7 @@
 		0A2636D92666D0F900FAA71D /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2636D82666D0F900FAA71D /* TabBarController.m */; };
 		0A31289726618101003AC216 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31289626618101003AC216 /* MapViewController.m */; };
 		0A31289A26618136003AC216 /* GeoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31289926618136003AC216 /* GeoService.m */; };
+		0A47B86B266CB97E0055DE05 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A47B86A266CB97E0055DE05 /* NotificationService.m */; };
 		0A680F41266B7F2F00C15CFB /* TicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A680F40266B7F2F00C15CFB /* TicketsViewController.m */; };
 		0A680F44266B822200C15CFB /* TicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A680F43266B822200C15CFB /* TicketTableViewCell.m */; };
 		0A687D1E26541CBA00A1140A /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A687D1B26541CBA00A1140A /* countries.json */; };
@@ -32,10 +33,10 @@
 		0A8ED918264FCF2C00F7B28C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A8ED917264FCF2C00F7B28C /* Assets.xcassets */; };
 		0A8ED91B264FCF2C00F7B28C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8ED919264FCF2C00F7B28C /* LaunchScreen.storyboard */; };
 		0A8ED91E264FCF2C00F7B28C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8ED91D264FCF2C00F7B28C /* main.m */; };
+		0A9F2A99267003330031207B /* FavoriteCity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F2A97267003330031207B /* FavoriteCity+CoreDataClass.swift */; };
+		0A9F2A9A267003330031207B /* FavoriteCity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F2A98267003330031207B /* FavoriteCity+CoreDataProperties.swift */; };
 		0AA2A31A266BB75B00110584 /* MapPrice+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2A319266BB75B00110584 /* MapPrice+CoreDataClass.swift */; };
 		0AA2A31C266BB78B00110584 /* MapPrice+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2A31B266BB78B00110584 /* MapPrice+CoreDataProperties.swift */; };
-		0AA2A333266C186A00110584 /* FavoriteCity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2A331266C186A00110584 /* FavoriteCity+CoreDataClass.swift */; };
-		0AA2A334266C186A00110584 /* FavoriteCity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2A332266C186A00110584 /* FavoriteCity+CoreDataProperties.swift */; };
 		0AA2A337266C1A0A00110584 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2A335266C1A0A00110584 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,8 @@
 		0A31289626618101003AC216 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		0A31289826618136003AC216 /* GeoService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeoService.h; sourceTree = "<group>"; };
 		0A31289926618136003AC216 /* GeoService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoService.m; sourceTree = "<group>"; };
+		0A47B869266CB97E0055DE05 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		0A47B86A266CB97E0055DE05 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
 		0A680F3F266B7F2F00C15CFB /* TicketsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TicketsViewController.h; sourceTree = "<group>"; };
 		0A680F40266B7F2F00C15CFB /* TicketsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketsViewController.m; sourceTree = "<group>"; };
 		0A680F42266B822200C15CFB /* TicketTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TicketTableViewCell.h; sourceTree = "<group>"; };
@@ -85,10 +88,10 @@
 		0A8ED91A264FCF2C00F7B28C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A8ED91C264FCF2C00F7B28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A8ED91D264FCF2C00F7B28C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A9F2A97267003330031207B /* FavoriteCity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteCity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0A9F2A98267003330031207B /* FavoriteCity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteCity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0AA2A319266BB75B00110584 /* MapPrice+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapPrice+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0AA2A31B266BB78B00110584 /* MapPrice+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapPrice+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		0AA2A331266C186A00110584 /* FavoriteCity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteCity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		0AA2A332266C186A00110584 /* FavoriteCity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteCity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0AA2A336266C1A0A00110584 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +142,8 @@
 				0A31289926618136003AC216 /* GeoService.m */,
 				0A0D4FDB266834050002972B /* DatabaseService.h */,
 				0A0D4FDC266834050002972B /* DatabaseService.m */,
+				0A47B869266CB97E0055DE05 /* NotificationService.h */,
+				0A47B86A266CB97E0055DE05 /* NotificationService.m */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -165,8 +170,8 @@
 		0A8ED8FF264FCF2B00F7B28C = {
 			isa = PBXGroup;
 			children = (
-				0AA2A331266C186A00110584 /* FavoriteCity+CoreDataClass.swift */,
-				0AA2A332266C186A00110584 /* FavoriteCity+CoreDataProperties.swift */,
+				0A9F2A97267003330031207B /* FavoriteCity+CoreDataClass.swift */,
+				0A9F2A98267003330031207B /* FavoriteCity+CoreDataProperties.swift */,
 				0AA2A319266BB75B00110584 /* MapPrice+CoreDataClass.swift */,
 				0AA2A31B266BB78B00110584 /* MapPrice+CoreDataProperties.swift */,
 				0A0D4FF9266838E10002972B /* FavoriteTicket+CoreDataClass.swift */,
@@ -279,20 +284,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA2A333266C186A00110584 /* FavoriteCity+CoreDataClass.swift in Sources */,
 				0A687D322656608600A1140A /* PlaceViewController.m in Sources */,
 				0A8ED913264FCF2B00F7B28C /* MainViewController.m in Sources */,
+				0A9F2A9A267003330031207B /* FavoriteCity+CoreDataProperties.swift in Sources */,
 				0A0D4FDD266834050002972B /* DatabaseService.m in Sources */,
 				0A0D4FFC266838E10002972B /* FavoriteTicket+CoreDataProperties.swift in Sources */,
-				0AA2A334266C186A00110584 /* FavoriteCity+CoreDataProperties.swift in Sources */,
 				0A8ED90D264FCF2B00F7B28C /* AppDelegate.m in Sources */,
 				0A0D4FFB266838E10002972B /* FavoriteTicket+CoreDataClass.swift in Sources */,
+				0A47B86B266CB97E0055DE05 /* NotificationService.m in Sources */,
 				0A680F44266B822200C15CFB /* TicketTableViewCell.m in Sources */,
 				0A0D4FD32668273C0002972B /* Price.m in Sources */,
 				0AA2A31C266BB78B00110584 /* MapPrice+CoreDataProperties.swift in Sources */,
 				0A0D4FDA2668326F0002972B /* Ticket.m in Sources */,
 				0A8ED91E264FCF2C00F7B28C /* main.m in Sources */,
 				0A687D2426541E3300A1140A /* Country.m in Sources */,
+				0A9F2A99267003330031207B /* FavoriteCity+CoreDataClass.swift in Sources */,
 				0A31289A26618136003AC216 /* GeoService.m in Sources */,
 				0A687D2A2654258A00A1140A /* Airport.m in Sources */,
 				0A687D27265420E000A1140A /* City.m in Sources */,

@@ -2,7 +2,7 @@
 //  FavoriteCity+CoreDataClass.swift
 //  TicketLand
 //
-//  Created by Дима Давыдов on 05.06.2021.
+//  Created by Дима Давыдов on 08.06.2021.
 //
 //
 

@@ -2,7 +2,7 @@
 //  FavoriteCity+CoreDataProperties.swift
 //  TicketLand
 //
-//  Created by Дима Давыдов on 05.06.2021.
+//  Created by Дима Давыдов on 08.06.2021.
 //
 //
 
@@ -16,8 +16,8 @@ extension FavoriteCity {
         return NSFetchRequest<FavoriteCity>(entityName: "FavoriteCity")
     }
 
-    @NSManaged public var lat: Double
-    @NSManaged public var lon: Double
+    @NSManaged public var lat: String?
+    @NSManaged public var lon: String?
 
 }
 

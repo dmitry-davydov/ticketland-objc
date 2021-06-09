@@ -89,7 +89,7 @@
     for (FavoriteCity *city in cities) {
         dispatch_async(dispatch_get_main_queue(), ^{
             MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
-            annotation.coordinate = CLLocationCoordinate2DMake(city.lat, city.lon);
+            annotation.coordinate = CLLocationCoordinate2DMake([city.lat doubleValue], [city.lon doubleValue]);
             
             [self->_mapView addAnnotation: annotation];
         });
@@ -135,7 +135,7 @@
 }
 
 - (void)toggleFavorite:(id)sender {
-    FavoriteCity *model = [[DatabaseService sharedInstance]findFavoriteCity:(_selectedCoordinates)];
+    FavoriteCity *model = [[DatabaseService sharedInstance] findFavoriteCity:(_selectedCoordinates)];
     if (model) {
         // remove from favorites cities
         [[DatabaseService sharedInstance] removeFavoriteCity:model];

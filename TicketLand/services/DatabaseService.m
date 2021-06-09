@@ -37,8 +37,11 @@
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:_managedObjectModel];
     
-    NSPersistentStore* store = [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:nil];
+    NSError *err;
+    
+    NSPersistentStore* store = [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&err];
     if (!store) {
+        NSLog(@"Error: %@", err.localizedDescription);
         abort();
     }
     
@@ -88,14 +91,17 @@
 
 - (void)addFavoriteCity:(CLLocationCoordinate2D)coordinate {
     FavoriteCity *model = [NSEntityDescription insertNewObjectForEntityForName:@"FavoriteCity" inManagedObjectContext:_managedObjectContext];
-    model.lat = (float)coordinate.latitude;
-    model.lon = (float)coordinate.longitude;
+    model.lat = [NSString stringWithFormat:@"%f", coordinate.latitude];
+    model.lon = [NSString stringWithFormat:@"%f", coordinate.longitude];
     
     [self save];
 }
 - (FavoriteCity *)findFavoriteCity:(CLLocationCoordinate2D)coordinate {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"FavoriteCity"];
-    request.predicate = [NSPredicate predicateWithFormat:@"lat == %@ AND lon == %@", coordinate.latitude, coordinate.longitude];
+    NSString *lat = [NSString stringWithFormat:@"%f", coordinate.latitude];
+    NSString *lon = [NSString stringWithFormat:@"%f", coordinate.longitude];
+    
+    request.predicate = [NSPredicate predicateWithFormat:@"lat == %@ and lon == %@", lat, lon];
     
     return [[_managedObjectContext executeFetchRequest:request error:nil] firstObject];
 }
